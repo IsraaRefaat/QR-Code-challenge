@@ -1,0 +1,84 @@
+/* Start Variables */
+:root {
+    --bg-color: hsl(212, 45%, 89%);
+    --card-color: hsl(0, 0%, 100%);
+    --par-color: hsl(220, 15%, 55%);
+    --dark-blue: hsl(218, 44%, 22%);
+}
+
+/* End Variables */
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--bg-color);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Small */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/* Start Global Rules */
+
+
+.container {
+    border: 1px solid var(--card-color);
+    background-color: var(--card-color);
+    border-radius: 15px;
+    max-width: 400px;
+    padding: 10px;
+    text-align: center;
+}
+
+#ch1 {
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--dark-blue);
+}
+
+#ch2 {
+    font-weight: 400;
+    font-size: 15px;
+    color: var(--par-color);
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    border-radius: 15px;
+}
+
+p {
+    margin: 20px 10px 30px 10px;
+    text-align: center;
+}
